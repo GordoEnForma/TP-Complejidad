@@ -32,5 +32,21 @@ El problema del viajero es uno de los problemas más complicados en el mundo de 
 
 <img src="http://images.rapgenius.com/0e1ca854cbc30f33abc46108f2ba38f2.640x640x42.gif" alt="drawing" width="350"/>
 
+
+### Grafos
+Los grafos son un conjunto de nodos los cuales presentan vertices y aritas, los cuales nos ayudan a representar información de manera visual. 
+
 ### Fuerza Bruta
-Uno de los algoritmos que hemos implementado como parte de nuestras propuestas de solución es uno basado en fuerza bruta, que tiene como parte de sus caracteristicas 
+Uno de los algoritmos que hemos implementado como parte de nuestras propuestas de solución es uno basado en busqueda por fuerza bruta, que tiene como parte de sus caracteristicas permutar sobre todas las rutas para hallar todos los caminos posibles. 
+
+### Backtracking
+El siguiente algoritmo que proponemos es uno basado en Backtracking, el cual busca la mejor combinación posible, ya que si encuentra una solución "correcta"
+aplica recursividad para encontrar otra propuesta, y en caso encuentre una solución "incorrecta" la recursividad retrocede un paso creando asi un arbol implícito en la que cada nodo es un estado de solución.
+
+
+## Conclusiones
+
+Despues de realizar las pruebas con varios distritos y centros poblados, hemos llegado a la siguientes conclusiones:
+
+- El algoritmo por fuerza bruta al tener una complejidad O(N!) nos ayuda cuando la cantidad de datos es muy pero muy pequeña, siendo una opción inviable para representar los caminos entre varias ciudades ya que en la vida real no solo queremos conocer la mejor ruta entre 5 o 6 centros poblados.
+- El algoritmo por backtracking tambien presenta una complejidad O(N!), lo que la vuelve una solución inviable para un uso real, siendo limitada a un uso didactico como parte del proceso de aprendizaje en el curso de complejidad algorítmica.
