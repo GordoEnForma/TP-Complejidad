@@ -43,6 +43,18 @@ Uno de los algoritmos que hemos implementado como parte de nuestras propuestas d
 El siguiente algoritmo que proponemos es uno basado en Backtracking, el cual busca la mejor combinación posible, ya que si encuentra una solución "correcta"
 aplica recursividad para encontrar otra propuesta, y en caso encuentre una solución "incorrecta" la recursividad retrocede un paso creando asi un arbol implícito en la que cada nodo es un estado de solución.
 
+## Análisis de la Complejidad
+### Busqueda por Fuerza Bruta:
+Para la solución basada en fuerza bruta, debemos permutar sobre la lista de centros poblados para hallar todas las posibles rutas. Para este ejemplo, se permuto sobre 9 centros poblados, dando una cantidad de 10! de posibilidades.
+
+<img src="https://cdn.discordapp.com/attachments/566485983025954827/840462572784058388/unknown.png" alt="drawing" width="350"/>
+
+Para calcular el camino más corto, hallar la secuencia de CP's que conforman esa ruta, y los edges, para n = 9 CP's, se demoro 25 segundos utilizando como entorno de ejecución Google Colab.
+
+<img src="https://cdn.discordapp.com/attachments/566485983025954827/840462336451411968/unknown.png" alt="drawing" width="500"/>
+
+Esto convierte a la solución en una de orden 0(n!), debido a su caracteristica de permutar sobre todos los caminos para hallar una ruta mínima.
+
 
 ## Conclusiones
 
